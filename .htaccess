@@ -1,2 +1,7 @@
-AllowOverride All
+# Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^test[nc]
+RewriteRule ^(.*)$ http://www.test/$1 [r=301,nc]
+
 ErrorDocument 404 /Errors/404.html
