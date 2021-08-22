@@ -1,6 +1,1 @@
-DocumentRoot /var/www/mywebsite
-
-ErrorLog ${Apache_LOG_DIR}/error.log
-CustomLog ${Apache_LOG_DIR}/access.log combined
-
-ErrorDocument 404 /Errors/404.html
+ErrorDocument 404 /errors/404.html
