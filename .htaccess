@@ -1,10 +1,6 @@
-<VirtualHost *:80>
+DocumentRoot /var/www/mywebsite
 
-    DocumentRoot /var/www/mywebsite
+ErrorLog ${Apache_LOG_DIR}/error.log
+CustomLog ${Apache_LOG_DIR}/access.log combined
 
-    ErrorLog ${Apache_LOG_DIR}/error.log
-    CustomLog ${Apache_LOG_DIR}/access.log combined
-
-    ErrorDocument 404 /Errors/404.html
-
-</VirtualHost>
+ErrorDocument 404 /Errors/404.html
