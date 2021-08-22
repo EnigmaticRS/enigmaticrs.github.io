@@ -1,2 +1,2 @@
 AllowOverride All
-ErrorDocument 404 /404.html
+ErrorDocument 404 /Errors/404.html
